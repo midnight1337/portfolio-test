@@ -1,0 +1,144 @@
+.experience__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.experience__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 30ch;
+    color: var(--clr-light-blue);
+    gap: 1rem;
+}
+
+.experience__company-title {
+    font-size: var(--size-3xl);
+}
+
+.experience__company-role {
+    font-size: var(--size-lg);
+}
+
+.experience__company-duration {
+    
+    font-size: var(--size-base);
+}
+
+.experience__responsibilities-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: var(--size-sm);
+    max-width: 120ch;
+    padding: 0;
+    list-style-position: inside;
+}
+
+.experience__hr {
+    margin-top: 1rem;
+}
+
+/* Media templates */
+/* xs */
+@media (min-width: 475px) {
+    .experience__content {
+        gap: 1.5rem;
+    }
+
+    .experience__company-title {
+        font-size: var(--size-3xl);
+    }
+    
+    .experience__company-role {
+        font-size: var(--size-xl);
+    }
+    
+    .experience__company-duration {
+        
+        font-size: var(--size-lg);
+    }
+    
+    .experience__responsibilities-ul {
+        font-size: var(--size-base);
+    }
+
+    .experience__hr {
+        margin-top: 1.5rem;
+    }
+}
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+@media (min-width: 1024px) {
+    .experience__content {
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .experience__description {
+        gap: 3rem;
+        justify-content: flex-start;
+    }
+
+    .experience__company-title {
+        font-size: var(--size-4xl);
+    }
+    
+    .experience__company-role {
+        font-size: var(--size-2xl);
+    }
+    
+    .experience__company-duration {
+        
+        font-size: var(--size-xl);
+    }
+    
+    .experience__responsibilities-ul {
+        font-size: var(--size-lg);
+        list-style-position: outside;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .experience__content{
+        gap: 5rem;
+    }
+
+    .experience__description {
+        justify-content: space;
+    }
+
+    .experience__company-title {
+        font-size: var(--size-5xl);
+    }
+    
+    .experience__company-role {
+        font-size: var(--size-3xl);
+    }
+    
+    .experience__company-duration {
+        
+        font-size: var(--size-2xl);
+    }
+    
+    .experience__responsibilities-ul {
+        font-size: var(--size-xl);
+    }
+
+    .experience__hr {
+        margin-top: 2rem;
+    }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

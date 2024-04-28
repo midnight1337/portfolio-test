@@ -1,0 +1,108 @@
+/* 
+    Color palette: https://designs.ai/colors/palette/1533
+    Color picker: https://imagecolorpicker.com/
+*/
+
+:root {
+    /* Main Colors */
+    /* --clr-light-grey: #ebebeb; */
+    --clr-light-grey: #e0dfdd;
+    --clr-dark-grey: #e0dfdd;
+    --clr-text: #000000;
+
+    /* --clr-dark-grey: rgba(224,223,221,255) */
+
+    --clr-papaya-whip: #FFECD1;
+    --clr-dark-brown: #472417;
+    --clr-dark-brown-footer: #291a15;
+
+    /* Maybe I will use these below maybe not */
+    /* Matchin colors */
+    --clr-yellow: #f7c469;
+    --clr-idk: #c46352;
+    --clr-brown: #714433;
+
+    /* std */
+    --clr-dark: #070a13;
+    --clr-light: #f1f5f9;
+    --clr-slate400: #94a3b8;
+    --clr-slate600: #475569;
+    --clr-slate800: #1e293b;
+    --clr-rose: #e11d48;
+    --clr-indigo: #4f46e5;
+    --clr-light-blue: #3b6388;
+    /* Rose rgb(225, 29, 72) */
+    /* Indigo rgb(79, 70, 229) */
+
+    /* TailwindCSS sizes */
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-sm: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+}
+
+* {
+    /* Debugging border */
+    /* border: 1px solid red; */
+    /* Custom scrollbar for Firefox, width: auto or thin */
+    scrollbar-width: auto;
+    scrollbar-color: var(--clr-dark-brown) var(--clr-light-grey);
+    margin: 0;
+    line-height: calc(1em + 0.5rem);    /* Better scalling of text */
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;    
+}
+
+body {
+    /* font-family: 'General Sans', sans-serif; */
+    font-family: trebuchet ms, 'sans-serif';
+    background-color: var(--clr-light-grey);
+    color: var(--clr-text);
+    letter-spacing: 0.15em;
+}
+
+/* By default these elements are inline so we overrite them */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+button {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+a {
+    color: var(--clr-dark-brown);
+}
+
+strong {
+    color: var(--clr-dark-brown)
+}
+
+span {
+    color: var(--clr-dark-brown)
+}

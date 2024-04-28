@@ -1,0 +1,222 @@
+/* 
+    Common interfaces
+*/
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.section {
+    margin-top: 8rem;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    background-color: var(--clr-dark-brown);
+    color: var(--clr-light);
+    padding: 0.5em 1em;
+    border-radius: 25px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 3px solid var(--clr-dark-brown);
+}
+
+.btn:hover {
+    background-color: var(--clr-brown);
+    
+    transform: translateX(5px);
+}
+
+/* Test button */
+.btn-shadow {
+    font-weight: 500;
+    padding: 0.5em 1em;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    font-family: Inter, sans-serif;
+    color: var(--clr-text);
+    background-color: var(--clr-light-grey);
+    border: 2px solid var(--clr-text);
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-shadow:after {
+    height: 100%;
+    width: 100%;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-color: var(--clr-text);
+    border-radius: 8px;
+    transform: translate(0px, 0px);
+    transition: transform .2s ease-out;
+}
+
+/* .btn-shadow:hover {
+    color: var(--clr-light-grey);
+    background-color: var(--clr-dark-brown);
+} */
+
+.btn-shadow:hover:after {
+    transform: translate(6px, 6px);
+}
+
+.test-btn-2 {
+    font-weight: 500;
+    padding: 0.5em 1em;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    font-family: Inter, sans-serif;
+    color: var(--clr-text);
+    background-color: var(--clr-light-grey);
+    border: 2px solid var(--clr-text);
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.test-btn-2:hover {
+    color: var(--clr-light-grey);
+    background-color: var(--clr-dark-brown);
+}
+
+.test-btn-2:hover:after {
+    transform: translate(6px, 6px);
+}
+
+/* End of Test button */
+
+.icons {
+    display: inline-block;
+    font-size: var(--size-3xl);
+    text-decoration: none;
+    color: var(--clr-text);
+    transition: all 0.3s ease;
+}
+
+.icons:hover {
+    color: var(--clr-light-blue);
+    transform: translateY(-5px);
+}
+
+.content__hr {
+    border-color: var(--clr-text);
+}
+
+/* Blinking cursor and typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blinking {
+    0% {
+        border-right-color: transparent
+    }
+
+    50% {
+        border-right-color: black
+    }
+
+    100% {
+        border-right-color: transparent
+    }
+}
+/* Blinking cursor and typing effect */
+
+/* Blinking dot */
+/* <div id="blink"></div> */
+#blink {
+    display: inline-block;
+    width: 0.45em;
+    height: 0.45em;
+    background-color: var(--clr-dark-brown);
+    border-radius: 100px;
+    margin-left: 0.5em;
+    margin-bottom: 0.4em;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+/* End of blinking dot */
+
+
+/* Breakpoints for responsive scalling */
+/* sm */
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+}
+
+/* Media templates */
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

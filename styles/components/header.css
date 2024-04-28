@@ -1,0 +1,134 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+    z-index: 9999;
+    border-bottom: 2px solid black;
+}
+
+.header__menu {
+    display: none;
+}
+
+.title__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-transform: uppercase;
+    font-size: var(--size-xs);
+    font-family: andale mono, 'monospace';
+}
+
+.header__menu-bar-btn {
+    display: block;
+    color: var(--clr-text);
+    width: var(--size-2xl);
+    height: var(--size-2xl);
+}
+
+/* TODO: Close button instead of bar when nav opened */
+#header__close-btn {
+    /* position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer; */
+    display: none;
+}
+
+.header__hr {
+    color: var(--clr-text);
+    width: 100%;
+}
+
+
+/* Media templates */
+/* xs */
+@media (min-width: 475px) {
+    .title__container {
+        font-size: var(--size-sm);
+    }
+}
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+    .title__container {
+        font-size: var(--size-base);
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .title__container {
+        font-size: var(--size-lg);
+    }
+
+    .header__menu {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        gap: 2em;
+    }
+
+    .header__link {
+        display: block;
+        font-size: var(--size-base);
+        text-decoration: none;
+        font-weight: 500;
+        color: var(--clr-text);
+        letter-spacing: 0.05em;
+
+        background:
+            linear-gradient(currentColor 0 0) 0 100% /var(--d, 0) 2px no-repeat;
+        transition: 0.5s;
+    }
+
+    .header__link:hover {
+        --d: 100%;
+    }
+
+    .header__resume {
+        font-size: var(--size-base);
+    }
+
+    .header__line {
+        border: 1px solid var(--clr-slate600);
+        padding-top: 1.5em;
+    }
+
+    .header__menu-bar-btn {
+        display: none;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .title__container {
+        font-size: var(--size-2xl);
+    }
+
+    .header__menu {
+        gap: 3em;
+    }
+
+    .header__link {
+        font-size: var(--size-base);
+    }
+
+    .header__resume {
+        font-size: var(--size-base);
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .title__container {
+        font-size: var(--size-4xl);
+    }
+}

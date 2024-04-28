@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google icons -->
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+    <!-- Google icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Remixicons CSS - icons stuff -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <!-- Scrollreveal - this is used for photo slowly showing up -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/utils.css">
+    <link rel="stylesheet" href="./styles/modern-normalize.css">
+    <link rel="stylesheet" href="./styles/components/about.css">
+    <link rel="stylesheet" href="./styles/components/contact.css">
+    <link rel="stylesheet" href="./styles/components/experience.css">
+    <link rel="stylesheet" href="./styles/components/footer.css">
+    <link rel="stylesheet" href="./styles/components/header.css">
+    <link rel="stylesheet" href="./styles/components/mobile-nav.css">
+    <link rel="stylesheet" href="./styles/components/projects.css">
+    <script src="./src/main.js"></script>
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header class="header container">
+        <div class="title__container">
+            <h1 class="header__title">Kamil.<span>Kołtowski </span></h1>
+        </div>
+        <nav>
+            <ul class="header__menu">
+                <li>
+                    <a href="#about" class="header__link">About me</a>
+                </li>
+                <li>
+                    <a href="#experience" class="header__link">Experience</a>
+                </li>
+                <li>
+                    <a href="#projects" class="header__link">Projects</a>
+                </li>
+                <li class="header__line"></li>
+                <li>
+                    <a class="header__resume btn" href="#">Resume</a>
+                </li>
+            </ul>
+            <button class="header__menu-bar-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile navigation menu-->
+    <div class="mobile-nav">
+        <nav>
+            <ul class="mobile-nav__menu">
+                <!-- <span id="close-menu-btn" class="material-symbols-outlined">close</span> -->
+                <li>
+                    <a href="#about" class="mobile-nav__link">About me</a>
+                </li>
+                <li>
+                    <a href="#experience" class="mobile-nav__link">Experience</a>
+                </li>
+                <li>
+                    <a href="#projects" class="mobile-nav__link">Projects</a>
+                </li>
+                <li class="mobile-nav__link-line"></li>
+                <li>
+                    <a href="" class="mobile-nav__btn btn">Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Mobile navigation -->
+
+    <main>
+        <section id="about" class="about container section">
+            <div class="section__title-container">
+                <h1 class="section__title">About me</h1>
+            </div>
+            <div class="about__container">
+                <div class="about__content">
+                    <h2 class="about__subtitle">Hello there, I'm Kamil 👋</h2>
+                    <p class="about__description">
+                        I'm an aspiring software engineer, with a very strong technical educational background in a
+                        field of a computer science, electronics and programming.
+                        Basically I love doing creative stuff.
+                    </p>
+                    <hr class="content__hr" />
+                    <h2 class="about__subtitle">Technologies I'm familiar with</h2>
+                    <div class="about__technologies-wrapper">
+                        <ul class="about__technologies-ul">
+                            <li class="about__list">Python</li>
+                            <li class="about__list">C++</li>
+                            <li class="about__list">HTML - CSS -JS</li>
+                        </ul>
+                        <ul class="about__technologies-ul">
+                            <li class="about__list">Django</li>
+                            <li class="about__list">Microcontrollers</li>
+                            <li class="about__list">Linux</li>
+                        </ul>
+                    </div>
+                    <hr class="about__hr" />
+                    <h2 class="about__subtitle">Connect with me</h2>
+                    <div class="about__social-wrapper">
+                        <ul class="about__social-ul">
+                            <li class="about__list">
+                                <a target="_blank" href="https://www.linkedin.com/in/kamil-koltowski/" class="icons">
+                                    <i class="ri-linkedin-box-line"></i>
+                                </a>
+                            </li>
+                            <li class="about__list">
+                                <a target="_blank" href="https://github.com/midnight1337" class="icons">
+                                    <i class="ri-github-fill"></i>
+                                </a>
+                            </li>
+                            <a target="_blank" href="mailto:kamil.koltows@gmail.com" class="btn">E-mail me</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about__img-wrapper">
+                    <img class="about__img" src="./public/about-picture.jpeg" alt="profile-picture">
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience container section">
+            <div class="section__title-container">
+                <h1 class="section__title">Experience</h1>
+            </div>
+            <div class="experience__content">
+                <div class="experience__description">
+                    <h2 class="experience__company-title">NOKIA</h2>
+                    <h3 class="experience__company-role">QA Engineer</h3>
+                    <h4 class="experience__company-duration">06.2020 - 03.2024</h4>
+                </div>
+                <div class="experience__responsibilites-wrapper">
+                    <ul class="experience__responsibilities-ul">
+                        <li class="experience__list">
+                            Development of a tool in Python, that automates log collection on a remote servers via SSH
+                            (see NLR
+                            project in Porgramming Projects section)
+                        </li>
+                        <li class="experience__list">
+                            Manual testing and test automation in Python and Robot Framework for 5G software features
+                        </li>
+                        <li class="experience__list">
+                            Creating test plans and test cases
+                        </li>
+                        <li class="experience__list">
+                            Working with Linux
+                        </li>
+                        <li class="experience__list">
+                            Log analysis and test results in order to provide feedback about software quality
+                        </li>
+                        <li class="experience__list">
+                            Substituting my Technical Leader during his absence
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <hr class="experience__hr" /> -->
+        </section>
+        <section id="projects" class="projects container section">
+            <div class="section__title-container">
+                <h1 class="section__title">Projects</h1>
+            </div>
+            <div class="projects__container">
+                <!-- Project 1 -->
+                <h3 class="project__title-mobile">NLR (Nokia Log Reaper)</h3>
+                <div class="project__img-wrapper project__img-1">
+                    <img class="project__img" src="./public/projects_nlr.jpg" alt="">
+                </div>
+                <div class="project__content project__content-1">
+                    <h3 class="project__title-desktop">NLR (Nokia Log Reaper)</h3>
+                    <ul class="project__stack-ul">
+                        <li class="project__list">
+                            Python
+                        </li>
+                        <li class="project__list">
+                            Paramiko
+                        </li>
+                        <li class="project__list">
+                            Threading
+                        </li>
+                    </ul>
+                    <p class="project__description">
+                        NLR is a tool that I've created during my time in Nokia, it purpose was to automate log
+                        collection on remote SSH servers (Copy data between remotes, executing scripts, monitoring of
+                        particular PID, Rebooting servers).
+                        Each ssh session is executed as own thread so tool is available to do multiple operations on
+                        many servers at once, without affecting each other.
+                    </p>
+                    <div>
+                        See more details on:
+                        <a target="_blank" href="https://github.com/midnight1337/NLR" class="icons">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <h3 class="project__title-mobile">Digital Guitar Stompbox</h3>
+                <div class="project__img-wrapper project__img-2">
+                    <img class="project__img" src="./public/projects_arduino-stmpbx.jpeg" alt="">
+                </div>
+                <div class="project__content project__content-2">
+                    <h3 class="project__title-desktop">Digital Guitar Stompbox</h3>
+                    <ul class="project__stack-ul">
+                        <li class="project__list">
+                            C++
+                        </li>
+                        <li class="project__list">
+                            Atmega328P
+                        </li>
+                        <li class="project__list">
+                            DSP
+                        </li>
+                    </ul>
+                    <p class="project__description">
+                        This is my graduation project on Wroclaw University Of Science and Technology.
+                        This is Atmega328P MCU based, fully digital guitar effects module. It contains in total four
+                        algorithms, that are considered as effects, that apply on a incoming signal from an electric guitar. 
+                        User can select two of them using buttons, and switch between them while playing using footswitch.
+                    </p>
+                    <div>
+                        See more details on:
+                        <a target="_blank" href="https://github.com/midnight1337/DigitalGuitarStompbox" class="icons">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <h3 class="project__title-mobile">Nixie Clock</h3>
+                <div class="project__img-wrapper project__img-3">
+                    <img class="project__img" src="./public/projects_nixie.jpg" alt="profile-picture">
+                </div>
+                <div class="project__content project__content-3">
+                    <h3 class="project__title-desktop">Nixie Clock</h3>
+                    <ul class="project__stack-ul">
+                        <li class="project__list">
+                            C++
+                        </li>
+                        <li class="project__list">
+                            Atmega328P
+                        </li>
+                    </ul>
+                    <p class="project__description">
+                        This is pretty cool looking clock based on vintage Nixie Tubes that were used in very old
+                        devices.
+                    </p>
+                    <div>
+                        See more details on:
+                        <a target="_blank" href="https://github.com/midnight1337/NixieClock" class="icons">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <h3 class="project__title-mobile">KAMIL.KOLTOWSKI</h3>
+                <div class="project__img-wrapper project__img-4 last-image">
+                    <img class="project__img" src="./public/projects_portfolio.png" alt="">
+                </div>
+                <div class="project__content project__content-4">
+                    <h3 class="project__title-desktop last-title">KAMIL-KOLTOWSKI.PL</h3>
+                    <ul class="project__stack-ul">
+                        <li class="project__list">
+                            HTML
+                        </li>
+                        <li class="project__list">
+                            CSS
+                        </li>
+                        <li class="project__list">
+                            JS
+                        </li>
+                    </ul>
+                    <p class="project__description">
+                        Basically website you are currently on.
+                    </p>
+                    <div>
+                        See more details on:
+                        <a target="_blank" href="https://github.com/midnight1337/portfolio" class="icons">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer container section">
+        <div class="footer__wrapper">
+            <div class="footer__top-container">
+                <ul class="footer__menu-ul">
+                    <li>
+                        <a href="#about" class="footer__link">About me</a>
+                    </li>
+                    <li>
+                        <a href="#experience" class="footer__link">Experience</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="footer__link">Projects</a>
+                    </li>
+                </ul>
+                <ul class="footer__social-ul">
+                    <li class="footer__list">
+                        <a target="_blank" href="https://www.linkedin.com/in/kamil-koltowski/" class="footer__icons">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+                    </li>
+                    <li class="footer__list">
+                        <a target="_blank" href="https://github.com/midnight1337" class="footer__icons">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </li>
+                    <li class="footer__list">
+                        <a target="_blank" href="mailto:kamil.koltows@gmail.com" class="btn">E-mail me</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__bottom-container">
+                <h3>2024 ~ Kamil Kołtowski ~</h3>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
